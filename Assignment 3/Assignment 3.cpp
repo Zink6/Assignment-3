@@ -5,7 +5,6 @@
 #include <cstdlib>
 #include <cstring>
 #include <cmath>
-
 using namespace std;
 
 struct node
@@ -40,7 +39,7 @@ int main()
 	while(1)
 	{
 		cout << "Skip List" << endl;
-		cout << "By: Hussam Mufti and Jayesh Vag" << endl << endl;
+		cout << "By: Hussam Mufti and Jayesh Vaghela" << endl << endl;
 		cout << "Select from the following options:" << endl;
 		cout << "1) Search" << endl;
 		cout << "2) Insert" << endl;
@@ -76,6 +75,22 @@ int main()
     return 0;
 }
 
+float random()
+{
+	return (float)(rand() / RAND_MAX);
+}
+
+int RandomLevel()
+{
+	int level = 0;
+	float P = 0.5;
+	while (random() < P && level < 6)
+	{
+		level++;
+	}
+	return level;
+}
+
 void list::searchSkipList(int value)
 {
 
@@ -83,7 +98,7 @@ void list::searchSkipList(int value)
 
 void list::insertIntoSkipList(int value)
 {
-
+	
 }
 
 void list::removeFromSkipList(int value)
