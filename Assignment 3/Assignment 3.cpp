@@ -54,16 +54,19 @@ int main()
 		case 1:
 			cout << "Enter the value to be searched: ";
 			cin >> input;
+			list.searchSkipList(input);
 			break;
 
 		case 2:
 			cout << "Enter the value to be inserted: ";
 			cin >> input;
+			list.insertIntoSkipList(input);
 			break;
 
 		case 3:
 			cout << "Enter the value to be deleted: ";
 			cin >> input;
+			list.removeFromSkipList(input);
 			break;
 
 		default:
